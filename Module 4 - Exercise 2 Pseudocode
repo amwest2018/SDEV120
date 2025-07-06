@@ -1,0 +1,16 @@
+Start
+    Set targetWord to the word you want to find (e.g., "logic")
+    Open dictionary to a random page
+    Set currentWord to the first word on that page
+
+    WHILE currentWord is not equal to targetWord
+        IF currentWord comes before targetWord alphabetically THEN
+            Flip forward to a new page
+        ELSE IF currentWord comes after targetWord alphabetically THEN
+            Flip backward to a new page
+        END IF
+        Set currentWord to the first word on the new page
+    END WHILE
+
+    Display "Found the word: " + targetWord
+End
