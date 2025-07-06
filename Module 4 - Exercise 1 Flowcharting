@@ -1,0 +1,17 @@
+Start
+    Set secretNumber to a random number between 1 and 100
+    Set guess to 0
+
+    WHILE guess is not equal to secretNumber
+        Prompt user to "Enter your guess (1-100):"
+        Input guess
+
+        IF guess < secretNumber THEN
+            Display "Too low!"
+        ELSE IF guess > secretNumber THEN
+            Display "Too high!"
+        ELSE
+            Display "Correct! You guessed the number."
+        END IF
+    END WHILE
+End
